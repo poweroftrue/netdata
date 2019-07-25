@@ -36,7 +36,7 @@ fi
 
 # Ensure there is a version, the most appropriate one
 if [ "${VERSION}" == "" ]; then
-    VERSION=$(git tag --points-at)
+    VERSION=latest
     if [ "${VERSION}" == "" ]; then
         VERSION="latest"
     fi
