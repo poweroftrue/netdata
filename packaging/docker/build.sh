@@ -65,7 +65,7 @@ for ARCH in ${ARCHS[@]}; do
      eval docker build --no-cache \
           --build-arg ARCH="${ARCH}" \
           --tag "${TAG}" \
-          --file packaging/docker/Dockerfile ./
+          --file packaging/docker/Dockerfile ./ &
      echo "..Done!"
 done
 
