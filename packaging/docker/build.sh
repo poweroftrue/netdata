@@ -20,7 +20,7 @@ DEVEL_ARCHS=(amd64)
 ARCHS="${!ARCH_MAP[@]}"
 
 if [ -z ${REPOSITORY} ]; then
-	REPOSITORY="${TRAVIS_REPO_SLUG}"
+	REPOSITORY=netdata/netdata
 	if [ -z ${REPOSITORY} ]; then
 		echo "REPOSITORY not set, build cannot proceed"
 		exit 1
